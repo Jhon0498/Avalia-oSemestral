@@ -1,17 +1,7 @@
 {% extends "base.html" %}
-{% block title %}Flasky{% endblock %}
 
-{% block page_content %}
-<div class="page-header">
-      {{ super() }}
-    <style>
-    </style>
-    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
-    {% if not known %}
-    <p>Pleased to meet you!</p>
-    {% else %}
-    <p>Happy to see you again!</p>
-    {% endif %}
-</div>
-{{ quick_form(form) }}
+{% block content %}
+<h2>Bem-vindo</h2>
+<p>Nome: {{ nome }}</p>
+<p>Prontuário: {{ prontuario }}</p>
 {% endblock %}
